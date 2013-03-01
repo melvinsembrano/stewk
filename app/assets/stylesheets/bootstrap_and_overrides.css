@@ -1,0 +1,33 @@
+/*
+  =require twitter-bootstrap-static/bootstrap
+
+  Use Font Awesome icons (default)
+  To use Glyphicons sprites instead of Font Awesome, replace with "require twitter-bootstrap-static/sprites"
+  =require twitter-bootstrap-static/fontawesome
+  */
+
+@media (min-width: 980px) {
+  .main {
+    margin-top: 2.5em;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+  .main {
+
+  }
+}
+
+@media (max-width: 767px) {
+  .main {
+
+  }
+}
+}
+
+@media (max-width: 480px) {
+  .main {
+    margin-top: 1em;
+  }
+}
+

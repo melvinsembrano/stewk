@@ -26,7 +26,7 @@ class Todo < ActiveRecord::Base
   private
 
   def set_due_on
-    due_on = parsed_due_on
+    self.due_on = self.parsed_due_on
   end
 
 end

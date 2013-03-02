@@ -1,15 +1,15 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
 one:
-  title: MyString
-  description: MyText
+  title: Test my scripts
+  description: Testing my scripts
   account_id: 1
   type_id: 1
-  due_on: 2013-02-27 16:20:49
+  due_on: <%= 1.hour.from_now %>
 
 two:
-  title: MyString
-  description: MyText
+  title: Test my design
+  description: Testing my design
   account_id: 1
   type_id: 1
-  due_on: 2013-02-27 16:20:49
+  due_on: <%= 6.hours.from_now %>

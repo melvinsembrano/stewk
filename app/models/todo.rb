@@ -14,7 +14,7 @@ class Todo < ActiveRecord::Base
 
   def due_time_on
     if @due_time_on.nil? && due_on
-      @due_time_on = due_on.to_time.strftime("%T")
+      @due_time_on = due_on.to_time.strftime("%r")
     end
     @due_time_on
   end

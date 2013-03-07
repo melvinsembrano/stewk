@@ -5,7 +5,7 @@ class TodoTest < ActiveSupport::TestCase
   test "should properly parse date and time properly" do
     todo = todos(:one)
     assert_equal todo.due_on, todo.parsed_due_on
-    assert_equal todo.due_time_on, todo.due_on.strftime("%T")
+    assert_equal todo.due_time_on, todo.due_on.strftime("%r")
     assert_equal todo.due_date_on, todo.due_on.to_date.to_s
   end
 

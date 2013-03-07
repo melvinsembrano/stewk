@@ -26,6 +26,8 @@ end
 
 gem 'jquery-rails'
 
+gem 'quiet_assets', :group => :development
+
 group :test do
   gem 'ruby-prof'
   gem 'cucumber'

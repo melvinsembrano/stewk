@@ -1,18 +1,14 @@
 <%- model_class = Todo -%>
 <div class="page-header">
-  <h1><%=t '.title', :default => model_class.model_name.human %></h1>
+  <h3><%=t '.title', :default => model_class.model_name.human %></h3>
 </div>
 
 <dl class="dl-horizontal">
   <dt><strong><%= model_class.human_attribute_name(:title) %>:</strong></dt>
   <dd><%= @todo.title %></dd>
   <dt><strong><%= model_class.human_attribute_name(:description) %>:</strong></dt>
-  <dd><%= @todo.description %></dd>
-  <dt><strong><%= model_class.human_attribute_name(:account_id) %>:</strong></dt>
-  <dd><%= @todo.account_id %></dd>
-  <dt><strong><%= model_class.human_attribute_name(:type_id) %>:</strong></dt>
-  <dd><%= @todo.type_id %></dd>
-  <dt><strong><%= model_class.human_attribute_name(:due_on) %>:</strong></dt>
+  <dd><%= @todo.description.presence || raw("&nbsp;") %></dd>
+  <dt><strong><%= "Due" %>:</strong></dt>
   <dd><%= @todo.due_on %></dd>
 </dl>
 
